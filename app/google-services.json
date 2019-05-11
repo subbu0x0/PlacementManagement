@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "284423738629",
+    "firebase_url": "https://placementmanagement-29304.firebaseio.com",
+    "project_id": "placementmanagement-29304",
+    "storage_bucket": "placementmanagement-29304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284423738629:android:e556fe58db5714dc",
+        "android_client_info": {
+          "package_name": "com.evolet.placementmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284423738629-khm8sjv5i5en5tubmtnjl2e8nbkla598.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.evolet.placementmanagement",
+            "certificate_hash": "ff255da11bfa6f212c7ce7c22780f6f208d407b1"
+          }
+        },
+        {
+          "client_id": "284423738629-102pi14rdm2mkq9gt99i810toacam71g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnWWRBACzv7ilHx8rMBkDi3K2qcrKrNRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284423738629-102pi14rdm2mkq9gt99i810toacam71g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

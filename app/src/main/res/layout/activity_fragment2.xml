@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment2"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Education Details"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:fontFamily="serif-monospace"/>
+    <EditText
+        android:id="@+id/q"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Highest Qualification"
+        android:layout_marginTop="25dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/gpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cgpa / Percentage"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="College Name"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/dept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passed Out Year"
+        android:layout_marginTop="20dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:hint="Work Experience (in years)"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/next1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Next" />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
