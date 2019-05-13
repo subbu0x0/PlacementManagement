@@ -91,11 +91,11 @@ public class AdminLogin extends AppCompatActivity {
                                         }
                                         else if(t.equals("recruiters")){
                                             Intent i2 = new Intent(getApplicationContext(),Recruits.class);
-                                           // startActivity(i2);
+                                          startActivity(i2);
                                         }
                                         else if(t.equals("hr")){
                                             Intent i3 = new Intent(getApplicationContext(),Hr.class);
-                                            //startActivity(i3);
+                                            startActivity(i3);
                                         }
                                         else if(t.equals("trainers")){
                                            Intent i4 = new Intent(getApplicationContext(),Train.class);
@@ -114,5 +114,9 @@ public class AdminLogin extends AppCompatActivity {
                         }
                     });
                 }
+            }
+            @Override
+    public void onBackPressed(){
+        finish();
             }
 }

@@ -4,12 +4,12 @@ import java.io.Serializable;
 
 public class Data implements Serializable {
     public String rid,applicantsName,age,fathersName,email,phoneNo,address,sex,highestQualification,cgpa,collegeName
-            ,dept,passedOut,workExperience,softwareLanguages,applyingFor,score,startImmediately,skills,appliedFor,friends;
+            ,dept,passedOut,workExperience,softwareLanguages,applyingFor,score,startImmediately,skills,appliedFor,friends,status;
 
     public Data() {
     }
 
-    public Data(String applicantsName, String age, String fathersName, String email, String phoneNo, String address, String sex, String highestQualification, String cgpa, String collegeName, String dept, String passedOut, String workExperience, String softwareLanguages, String applyingFor, String score, String startImmediately, String skills, String appliedFor, String friends,String rid) {
+    public Data(String applicantsName, String age, String fathersName, String email, String phoneNo, String address, String sex, String highestQualification, String cgpa, String collegeName, String dept, String passedOut, String workExperience, String softwareLanguages, String applyingFor, String score, String startImmediately, String skills, String appliedFor, String friends,String rid,String status) {
         this.applicantsName = applicantsName;
         this.age = age;
         this.fathersName = fathersName;
@@ -17,6 +17,7 @@ public class Data implements Serializable {
         this.phoneNo = phoneNo;
         this.address = address;
         this.sex = sex;
+        this.status = status;
         this.highestQualification = highestQualification;
         this.cgpa = cgpa;
         this.collegeName = collegeName;
@@ -31,6 +32,14 @@ public class Data implements Serializable {
         this.appliedFor = appliedFor;
         this.friends = friends;
         this.rid = rid;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getRid() {

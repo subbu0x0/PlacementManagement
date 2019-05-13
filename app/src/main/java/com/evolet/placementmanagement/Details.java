@@ -34,7 +34,7 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 
 public class Details extends AppCompatActivity {
-    private TextView n,a,f,e,p,as,sx,h,ca,ce,dt,poy,w,slk,s,c,ts;
+    private TextView n,a,f,e,p,as,sx,h,ca,ce,dt,poy,w,slk,s,c,ts,sk;
     private static Data data;
 
     @Override
@@ -61,7 +61,8 @@ public class Details extends AppCompatActivity {
         s = findViewById(R.id.s);
         c = findViewById(R.id.c);
         ts = findViewById(R.id.ts);
-
+        sk = findViewById(R.id.status);
+        sk.setText(""+data.getStatus());
         n.setText(""+data.getApplicantsName());
         a.setText(""+data.getAge());
         f.setText(""+data.getFathersName());
@@ -79,6 +80,13 @@ public class Details extends AppCompatActivity {
         c.setText(""+data.getStartImmediately());
         s.setText(""+data.getScore());
         ts.setText(""+data.getSkills());
-    }
 
+    }
+    public void updateStatus(View v){
+        Intent i = new Intent(this,UStatus.class);
+        Bundle b = new Bundle();
+        b.putString("name",data.getApplicantsName());
+        i.putExtras(b);
+        startActivity(i);
+    }
 }

@@ -115,11 +115,14 @@ public class Fragment3 extends Fragment {
                     data.setScore(String.valueOf(per));
                     data.setStartImmediately(st);
                     data.setSkills(skills);
+                    data.setStatus("In process");
                     addTodb();
                     Toast.makeText(getActivity(),"successfully added to database",Toast.LENGTH_LONG)
                             .show();
                     Intent i = new Intent(getActivity(), MainActivity.class);
                     startActivity(i);
+                    getActivity().finish();
+                    return;
                 }
             }
         });
